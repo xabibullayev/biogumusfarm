@@ -112,16 +112,29 @@ function Navbar() {
           </li>
 
           <li className={style.lang}>
-            {locales.map((lng) => (
-              <Link href="/" locale={lng} key={lng}>
-                <Image
-                  src={`/images/${lng}.webp`}
-                  width={20}
-                  height={20}
-                  alt={`${lang}`}
-                />
-              </Link>
-            ))}
+            <div className="flex gap-2">
+              {locales.map((lng) => {
+                if (lng === lang) return null;
+
+                return (
+                  <Link
+                    href="/"
+                    locale={lng}
+                    key={lng}
+                    className="flex items-center mr-2"
+                  >
+                    <Image
+                      src={`/images/${lng}.webp`}
+                      width={20}
+                      height={20}
+                      alt={`${lang}`}
+                      className="mr-1"
+                    />
+                    {t(`language-name-${lng}`)}
+                  </Link>
+                );
+              })}
+            </div>
           </li>
 
           <div className={style.bottom}>
