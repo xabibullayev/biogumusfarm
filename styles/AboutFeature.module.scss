@@ -1,0 +1,239 @@
+.aboutFeature {
+  background-color: #f7f5f1;
+  padding-top: 100px;
+  height: 100%;
+
+  .container {
+    width: 85%;
+    margin: auto;
+
+    .title {
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 80px;
+
+      span {
+        font-size: 20px;
+        color: #644222;
+      }
+
+      h1 {
+        font-size: 45px;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+
+      p {
+        opacity: 0.6;
+      }
+    }
+
+    .features {
+      display: flex;
+      margin-bottom: 100px;
+
+      .left {
+        flex: 1;
+        border-right: 2px solid #644222;
+        padding: 100px;
+        padding-top: 0;
+
+        .items {
+          .item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 20px;
+            position: relative;
+            margin-bottom: 80%;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            img {
+              width: 100%;
+            }
+
+            h2 {
+              font-size: 35px;
+              color: rgba($color: #000000, $alpha: 0.8);
+            }
+
+            span {
+              text-align: right;
+              color: rgba($color: #000000, $alpha: 0.7);
+              font-size: 18px;
+            }
+
+            b {
+              width: 15px;
+              height: 15px;
+              background-color: #644222;
+              border-radius: 50%;
+              position: absolute;
+              right: -108px;
+              top: 50%;
+            }
+          }
+        }
+      }
+
+      .right {
+        flex: 1;
+        padding: 100px;
+        padding-top: 0;
+
+        .items {
+          .item {
+            margin-top: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+
+            img {
+              width: 100%;
+            }
+
+            h2 {
+              font-size: 35px;
+              color: rgba($color: #000000, $alpha: 0.8);
+            }
+
+            span {
+              color: rgba($color: #000000, $alpha: 0.7);
+              font-size: 18px;
+            }
+
+            b {
+              width: 15px;
+              height: 15px;
+              background-color: #644222;
+              border-radius: 50%;
+              position: absolute;
+              left: -108px;
+              top: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutFeature {
+    .container {
+      .title {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .aboutFeature {
+    .container {
+      width: 90%;
+
+      .title {
+        width: 100%;
+      }
+
+      .features {
+        padding: 0;
+
+        .left {
+          padding: 30px;
+          flex: 1;
+
+          .items {
+            .item {
+              b {
+                right: -38px;
+              }
+            }
+          }
+        }
+
+        .right {
+          padding: 30px;
+
+          .items {
+            .item {
+              b {
+                left: -38px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutFeature {
+    .container {
+      .title {
+        padding-top: 30px;
+        margin-bottom: 30px;
+
+        h1 {
+          font-size: 30px;
+        }
+      }
+
+      .features {
+        flex-direction: column;
+
+        .left {
+          border-right: none;
+
+          .items {
+            .item {
+              margin-bottom: 50px;
+              align-items: flex-start;
+
+              h2 {
+                font-size: 30px;
+              }
+
+              span {
+                text-align: left;
+                font-size: 18px;
+              }
+
+              b {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .right {
+          .items {
+            .item {
+              margin: 0;
+
+              h2 {
+                font-size: 30px;
+              }
+
+              span {
+                font-size: 18px;
+              }
+
+              b {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

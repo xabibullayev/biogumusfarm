@@ -1,0 +1,29 @@
+.header {
+  background-color: #f6f4f0;
+  height: 60px;
+
+  .container {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #345243;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .container {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    display: none;
+  }
+}

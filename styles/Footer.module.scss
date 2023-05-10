@@ -1,0 +1,229 @@
+.footer {
+  background-image: url("/images/footer-bg.png");
+  color: white;
+  padding-top: 100px;
+
+  .container {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      flex: 1;
+
+      .logo {
+        width: max-content;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 80px;
+          height: 60px;
+          margin-right: 20px;
+        }
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .item {
+          display: flex;
+          align-items: center;
+
+          .iconCover {
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            color: #644222;
+            padding: 5px;
+            font-size: 12px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      // margin-top: 80px;
+      display: flex;
+      // gap: 150px;
+
+      .links {
+        h2 {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          li {
+            opacity: 0.7;
+
+            a {
+              text-decoration: none;
+              color: inherit;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .subscribe {
+        h2 {
+          margin-bottom: 30px;
+        }
+
+        span {
+          opacity: 0.7;
+        }
+
+        .input {
+          margin-top: 20px;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+
+          input {
+            width: 100%;
+            border: none;
+            padding: 10px;
+            outline: none;
+          }
+
+          button {
+            border: none;
+            background-color: #644222;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    background-color: #282828;
+    padding: 20px 0;
+
+    .cover {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    .container {
+      width: 95%;
+      gap: 20px;
+
+      .left {
+        width: 200px;
+        margin-bottom: 50px;
+      }
+
+      .right {
+        gap: 30px;
+
+        .links {
+          width: 100px;
+        }
+
+        .subscribe {
+          width: 95%;
+
+          .input {
+            input {
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .container {
+      align-items: center;
+
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+        justify-content: center;
+
+        .logo {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .items {
+          margin-left: 2rem;
+        }
+      }
+
+      .right {
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+
+        .links {
+          width: 100%;
+
+          h2 {
+            text-align: center;
+            margin-bottom: 10px;
+          }
+
+          ul {
+            justify-content: center;
+            flex-direction: row;
+          }
+        }
+
+        .subscribe {
+          .input {
+            input {
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .copyright {
+      display: flex;
+      flex-direction: column;
+
+      .cover {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+  }
+}

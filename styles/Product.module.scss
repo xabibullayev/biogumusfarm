@@ -1,0 +1,78 @@
+.product {
+  background-color: #fff;
+  padding: 100px 0;
+
+  .container {
+    width: 85%;
+    margin: auto;
+
+    .title {
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 80px;
+
+      span {
+        font-size: 20px;
+        color: #699c47;
+      }
+
+      h1 {
+        font-size: 45px;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+    }
+
+    .cards {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+
+      .first,
+      .second {
+        display: flex;
+        gap: 30px;
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .product {
+    .container {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .product {
+    .container {
+      .cards {
+        flex-direction: row;
+
+        .first,
+        .second {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product {
+    .container {
+      .cards {
+        flex-direction: column;
+
+        .first,
+        .second {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

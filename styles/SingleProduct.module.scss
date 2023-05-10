@@ -1,0 +1,40 @@
+.single {
+  .container {
+    width: 80%;
+    margin: auto;
+
+    .product {
+      display: flex;
+      padding: 100px 0;
+      gap: 30px;
+
+      .img {
+        flex: 1;
+        background-color: #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .stars {
+          display: flex;
+
+          .star {
+            color: #f8a231;
+          }
+        }
+
+        h2 {
+          font-size: 35px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

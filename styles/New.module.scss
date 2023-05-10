@@ -1,0 +1,161 @@
+.new {
+  background-color: #fff;
+  padding: 100px 0;
+
+  .container {
+    width: 85%;
+    margin: auto;
+
+    .title {
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 80px;
+
+      span {
+        font-size: 20px;
+        color: #345243;
+      }
+
+      h1 {
+        font-size: 55px;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+
+      p {
+        opacity: 0.6;
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 0 50px;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        box-sizing: border-box;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .top {
+          display: flex;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+
+            transition: all 0.4s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .bottom {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px;
+          border: 1px solid rgba($color: #000000, $alpha: 0.3);
+          border-top: none;
+
+          span {
+            padding: 8px 15px;
+            width: max-content;
+            background-color: #345243;
+            color: #fff;
+          }
+
+          h2 {
+            font-size: 25px;
+            opacity: 0.8;
+          }
+
+          p {
+            opacity: 0.6;
+          }
+
+          a {
+            text-decoration: none;
+            color: #345243;
+            border-bottom: 3px solid #345243;
+            width: max-content;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .new {
+    .container {
+      padding: 0;
+      width: 95%;
+
+      .title {
+        width: 100%;
+      }
+
+      .items {
+        padding: 0;
+        gap: 10px;
+
+        .item {
+          .bottom {
+            h2 {
+              font-size: 20px;
+            }
+
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .new {
+    padding-top: 30px;
+
+    .container {
+      width: 90%;
+      .title {
+        h1 {
+          font-size: 35px;
+        }
+      }
+
+      .items {
+        flex-direction: column;
+
+        .item {
+          .bottom {
+            gap: 10px;
+
+            h2 {
+              font-size: 20px;
+            }
+
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

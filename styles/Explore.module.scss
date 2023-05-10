@@ -1,0 +1,150 @@
+.explore {
+  background-color: #f7f5f1;
+  padding: 100px 0;
+
+  .container {
+    width: 85%;
+    margin: auto;
+
+    .title {
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 80px;
+
+      span {
+        font-size: 20px;
+        color: #699c47;
+      }
+
+      h1 {
+        font-size: 45px;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+
+      p {
+        opacity: 0.6;
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      .first,
+      .second {
+        display: flex;
+        gap: 20px;
+
+        .item {
+          padding: 5px;
+          transition: all 0.3s ease;
+
+          .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: #fff;
+            height: 100%;
+            padding: 20px;
+            -webkit-box-shadow: 4px 4px 38px -11px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 4px 4px 38px -11px rgba(34, 60, 80, 0.2);
+            box-shadow: 4px 4px 38px -11px rgba(34, 60, 80, 0.2);
+
+            img {
+              width: 25%;
+            }
+
+            h2 {
+              font-size: 23px;
+              opacity: 0.9;
+            }
+
+            p {
+              opacity: 0.6;
+            }
+
+            a {
+              text-decoration: none;
+              color: inherit;
+              opacity: 0.8;
+              display: flex;
+              align-items: center;
+
+              .icon {
+                font-size: 110%;
+              }
+            }
+          }
+
+          &:hover {
+            background-color: #fff;
+            -webkit-box-shadow: 4px 4px 8px -3px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 4px 4px 8px -3px rgba(34, 60, 80, 0.2);
+            box-shadow: 4px 4px 8px -3px rgba(34, 60, 80, 0.2);
+
+            .container {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .explore {
+    .container {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .explore {
+    .container {
+      width: 90%;
+
+      .title {
+        width: 100%;
+
+        h1 {
+          font-size: 35px;
+        }
+      }
+
+      .first,
+      .second {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .explore {
+    padding-top: 20px;
+
+    .container {
+      width: 100%;
+
+      .title {
+        margin: 20px;
+
+        h1 {
+          font-size: 25px;
+        }
+      }
+
+      .items {
+        flex-direction: column;
+      }
+    }
+  }
+}

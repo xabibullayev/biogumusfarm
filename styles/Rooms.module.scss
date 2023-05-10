@@ -1,0 +1,37 @@
+.rooms {
+  .top {
+    height: 500px;
+    background-image: url("/images/slider-bg-1.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      width: 60%;
+      color: #fff;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .rooms {
+    .top {
+      h1 {
+        width: 90%;
+        // font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .rooms {
+    .top {
+      h1 {
+        font-size: 25px;
+      }
+    }
+  }
+}

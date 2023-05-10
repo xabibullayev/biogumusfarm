@@ -1,0 +1,107 @@
+.main {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+
+  .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    .left {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      span {
+        color: #345243;
+        font-size: 25px;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      button {
+        background-color: #345243;
+        width: 30%;
+        color: white;
+        padding: 10px 0;
+        font-size: 18px;
+        transition: all 0.4s ease;
+
+        &:hover {
+          background-color: #fff;
+          border: 1px solid #345243;
+          color: #345243;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+
+      img {
+        transition: transform 0.4s;
+        transform: rotateY(0deg) rotate(30deg); /* needs Y at 0 deg to behave properly*/
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    .container {
+      width: 95%;
+
+      .left {
+        span {
+          font-size: 20px;
+        }
+
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    .container {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    .container {
+      width: 95%;
+
+      .left {
+        span {
+          font-size: 15px;
+        }
+
+        h1 {
+          font-size: 25px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
