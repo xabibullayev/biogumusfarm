@@ -102,7 +102,7 @@ function Navbar() {
             <Link href="/products">Продукция</Link>
           </li>
           <li>
-            <Link href="/packages">Упаковки</Link>
+            <Link href="/packages">Производство</Link>
           </li>
           <li>
             <Link href="/safety">Требования о пищевой безопасности</Link>

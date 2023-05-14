@@ -19,6 +19,41 @@ function Footer() {
   return (
     <div className={style.footer}>
       <div className={style.container}>
+        <div className={style.sponser}>
+          <div className={style.img}>
+            <img src="/images/sponser-1.png" alt="" />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-2.png" alt="" />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-3.png" alt="" />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-4.png" alt="" />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-5.png" alt="" className={style.img5} />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-6.png" alt="" />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-7.png" alt="" />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-8.png" alt="" />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-9.png" alt="" />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-10.jpg" alt="" />
+          </div>
+          <div className={style.img}>
+            <img src="/images/sponser-11.png" alt="" />
+          </div>
+        </div>
         <div className={style.left}>
           <div className={style.logo}>
             <Image
