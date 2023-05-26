@@ -41,11 +41,19 @@ function AboutUs({ page }) {
                 консервантов!
               </i>
             </div>
-            <img src="images/about-img-1.jpg" alt="" />
+            <img
+              src="images/working-3.jpg"
+              alt=""
+              style={{ height: "250px", borderRadius: "10px" }}
+            />
           </div>
           <img src="images/about-shape-1.png" alt="" className={style.shape} />
           <div className={style.second}>
-            <img src="images/about-img-2.jpg" alt="" />
+            <img
+              src="images/working-2.jpg"
+              alt=""
+              style={{ height: "250px", borderRadius: "10px" }}
+            />
           </div>
         </div>
       </div>
