@@ -93,22 +93,34 @@ function Navbar() {
           </div>
 
           <li>
-            <Link href="/">Главная</Link>
+            <Link href="/" onClick={closeMenu}>
+              Главная
+            </Link>
           </li>
           <li>
-            <Link href="/about">О Нас</Link>
+            <Link href="/about" onClick={closeMenu}>
+              О Нас
+            </Link>
           </li>
           <li>
-            <Link href="/products">Продукция</Link>
+            <Link href="/products" onClick={closeMenu}>
+              Продукция
+            </Link>
           </li>
           <li>
-            <Link href="/packages">Производство</Link>
+            <Link href="/packages" onClick={closeMenu}>
+              Производство
+            </Link>
           </li>
           <li>
-            <Link href="/safety">Требования о пищевой безопасности</Link>
+            <Link href="/safety" onClick={closeMenu}>
+              Требования о пищевой безопасности
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Контакты</Link>
+            <Link href="/contact" onClick={closeMenu}>
+              Контакты
+            </Link>
           </li>
 
           <li className={style.lang}>

@@ -11,7 +11,7 @@
     height: 100%;
 
     .left {
-      flex: 1.5;
+      flex: 1;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -50,81 +50,10 @@
 
     .right {
       flex: 1;
-      position: relative;
-      padding: 100px;
       height: 100%;
       display: flex;
-      margin-left: 50px;
-
-      .img1 {
-        height: 400px;
-        position: absolute;
-        top: 50px;
-        left: 50px;
-        transition: transform 0.4s;
-        transform: rotateY(0deg) rotate(-40deg); /* needs Y at 0 deg to behave properly*/
-      }
-
-      .img2 {
-        height: 400px;
-        position: absolute;
-        top: 50px;
-        left: 90px;
-        transition: transform 0.4s;
-        transform: rotateY(0deg) rotate(-30deg); /* needs Y at 0 deg to behave properly*/
-      }
-
-      .img3 {
-        height: 400px;
-        position: absolute;
-        top: 55px;
-        left: 130px;
-        transition: transform 0.4s;
-        transform: rotateY(0deg) rotate(-20deg); /* needs Y at 0 deg to behave properly*/
-      }
-
-      .img4 {
-        height: 400px;
-        position: absolute;
-        top: 70px;
-        left: 165px;
-        transition: transform 0.4s;
-        transform: rotateY(0deg) rotate(-10deg); /* needs Y at 0 deg to behave properly*/
-      }
-
-      .img5 {
-        height: 400px;
-        position: absolute;
-        top: 90px;
-        left: 195px;
-        transition: transform 0.4s;
-        transform: rotateY(0deg) rotate(0deg); /* needs Y at 0 deg to behave properly*/
-      }
-
-      .img6 {
-        height: 400px;
-        position: absolute;
-        top: 110px;
-        left: 230px;
-        transition: transform 0.4s;
-        transform: rotateY(0deg) rotate(10deg); /* needs Y at 0 deg to behave properly*/
-      }
-      .img7 {
-        height: 400px;
-        position: absolute;
-        top: 130px;
-        left: 260px;
-        transition: transform 0.4s;
-        transform: rotateY(0deg) rotate(20deg); /* needs Y at 0 deg to behave properly*/
-      }
-      .img8 {
-        height: 400px;
-        position: absolute;
-        top: 160px;
-        left: 280px;
-        transition: transform 0.4s;
-        transform: rotateY(0deg) rotate(30deg); /* needs Y at 0 deg to behave properly*/
-      }
+      align-items: center;
+      justify-content: center;
     }
   }
 }

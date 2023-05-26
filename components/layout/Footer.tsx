@@ -119,16 +119,7 @@ function Footer() {
           </h2>
           <div className="flex max-md:items-center max-md:justify-center flex-col gap-2">
             <Link
-              href="https://f.me/21345"
-              className="flex items-center gap-2"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <IconBrandFacebook />
-              <span>Facebook</span>
-            </Link>
-            <Link
-              href="https://instagram.com/21345"
+              href="https://instagram.com/"
               target="_blank"
               className="flex items-center gap-2"
               rel="noreferrer noopener"

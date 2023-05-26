@@ -18,14 +18,7 @@ function Main() {
         </div>
 
         <div className={style.right}>
-          <img src="/images/1.1.png" alt="" className={style.img1} />
-          <img src="/images/2.1.png" alt="" className={style.img2} />
-          <img src="/images/3.1.png" alt="" className={style.img3} />
-          <img src="/images/4.1.png" alt="" className={style.img4} />
-          <img src="/images/5.1.png" alt="" className={style.img5} />
-          <img src="/images/6.1.png" alt="" className={style.img6} />
-          <img src="/images/7.1.png" alt="" className={style.img7} />
-          <img src="/images/8.1.png" alt="" className={style.img8} />
+          <img src="/images/main.png" alt="" className={style.img} />
         </div>
       </div>
     </div>

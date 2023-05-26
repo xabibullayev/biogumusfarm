@@ -1,5 +1,6 @@
 import Link from "next/link";
 import style from "../styles/ProductCard.module.scss";
+import Image from "next/image";
 
 interface IProductProps {
   product: {
@@ -12,7 +13,7 @@ function ProductCard({ product }: IProductProps) {
   return (
     <div className={style.productCard}>
       <div className={style.top}>
-        <img src={product.img} alt="" />
+        <Image src={product.img} alt="" width={100} height={100} unoptimized />
       </div>
 
       <div className={style.bottom}>
