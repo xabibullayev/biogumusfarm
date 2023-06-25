@@ -1,5 +1,3 @@
-import { IconCheck } from "@tabler/icons-react";
-import Image from "next/image";
 import style from "../styles/AboutUs.module.scss";
 import useTranslation from "next-translate/useTranslation";
 
