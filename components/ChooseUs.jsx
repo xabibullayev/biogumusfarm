@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "../styles/ChooseUs.module.scss";
 import useTranslation from "next-translate/useTranslation";
 
@@ -44,7 +43,7 @@ function ChooseUs() {
           </div>
 
           <div className={style.center}>
-            <img src="images/why-choose-big.png" alt="" />
+            <img src="images/1.1.png" alt="" />
           </div>
 
           <div className={style.right}>

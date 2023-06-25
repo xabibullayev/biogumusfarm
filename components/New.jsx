@@ -14,7 +14,7 @@ function New() {
         <div className={style.items}>
           <div className={style.item}>
             <div className={style.top}>
-              <Image src="/images/new-1.jpg" width={200} height={250} alt="" />
+              <Image src="/images/new-1.webp" width={200} height={250} alt="" />
             </div>
             <div className={style.bottom}>
               <span>3rd Aprip 2023</span>
@@ -29,7 +29,7 @@ function New() {
 
           <div className={style.item}>
             <div className={style.top}>
-              <Image src="/images/new-2.jpg" width={200} height={250} alt="" />
+              <Image src="/images/new-2.webp" width={200} height={250} alt="" />
             </div>
             <div className={style.bottom}>
               <span>3rd Aprip 2023</span>
@@ -44,7 +44,7 @@ function New() {
 
           <div className={style.item}>
             <div className={style.top}>
-              <Image src="/images/new-3.jpg" width={200} height={250} alt="" />
+              <Image src="/images/new-3.webp" width={200} height={250} alt="" />
             </div>
             <div className={style.bottom}>
               <span>3rd Aprip 2023</span>
